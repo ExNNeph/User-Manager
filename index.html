@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Manager</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <h1>User Manager</h1>
+  <form id="user-form">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" required>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <button type="submit">Add User</button>
+  </form>
+  <div id="user-buttons">
+    <button id="show-users-button">Show All Users</button>
+    <button id="delete-all-users-button">Delete All Users</button>
+  </div>
+  <table id="user-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
